@@ -47,6 +47,7 @@
             this.btnPlay.TabIndex = 0;
             this.btnPlay.Text = "Play";
             this.btnPlay.UseVisualStyleBackColor = false;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
             // lblPlatformer
             // 
@@ -85,6 +86,7 @@
             this.DoubleBuffered = true;
             this.Name = "MainMenu";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Close);
             this.ResumeLayout(false);
             this.PerformLayout();
 

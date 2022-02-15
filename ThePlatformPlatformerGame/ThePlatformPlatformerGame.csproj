@@ -96,6 +96,9 @@
     <Compile Include="Views\ThirdLevel.Designer.cs">
       <DependentUpon>ThirdLevel.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\FirstLevel.resx">
+      <DependentUpon>FirstLevel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\LevelSelect.resx">
       <DependentUpon>LevelSelect.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +115,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\SecondLevel.resx">
+      <DependentUpon>SecondLevel.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -130,6 +136,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\example.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door-closed.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door-open.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\platform.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layer_0001_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ice_23_16x16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
