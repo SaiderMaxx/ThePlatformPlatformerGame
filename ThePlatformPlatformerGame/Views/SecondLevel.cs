@@ -89,7 +89,7 @@ namespace ThePlatformPlatformerGame
                 pbDoorClosed.Image = Properties.Resources.door_open;
                 timer.Stop();
                 MessageBox.Show("Well done, your journey is complete! " + Environment.NewLine + "Click Ok to play again");
-                RestartGame();
+                NextLevel();
             }
 
             if (pbPlayer.Top + pbPlayer.Height > ClientSize.Height)
@@ -137,7 +137,12 @@ namespace ThePlatformPlatformerGame
         {
             Application.Exit();
         }
-
+        private void NextLevel()
+        {
+            ThirdLevel newWindow = new ThirdLevel();
+            newWindow.Show();
+            this.Hide();
+        }
         private void RestartGame()
         {
             SecondLevel newWindow = new SecondLevel();

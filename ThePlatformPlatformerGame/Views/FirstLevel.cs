@@ -25,14 +25,6 @@ namespace ThePlatformPlatformerGame
         {
             InitializeComponent();
         }
-
-        /*
-       private void playSimpleSound()
-        {
-            SoundPlayer simpleSound = new SoundPlayer(ThePlatformPlatformerGame.Properties.Resources.Music);
-            simpleSound.Play();
-        }
-       */
         private void timer_Tick(object sender, EventArgs e)
         {
             pbPlayer.Top += jumpSpeed;
@@ -68,7 +60,7 @@ namespace ThePlatformPlatformerGame
                 jumpSpeed = 12;
             }
 
-            if (jumping == true && force < 0)
+            if (jumping == true && force < 3)
             {
                 jumping = false;
             }
@@ -87,22 +79,24 @@ namespace ThePlatformPlatformerGame
                 }
             }
 
-            if (pbPlayer.Bounds.IntersectsWith(pbDoorOpen.Bounds) )
-            {
-                timer.Stop();
-
-                SecondLevel secondLevel = new SecondLevel();
-                secondLevel.Show();
-                this.Hide();
-            }
-
             if (pbPlayer.Top + pbPlayer.Height > ClientSize.Height)
             {
                 timer.Stop();
                 MessageBox.Show("You Died!" + Environment.NewLine + "Click Ok to play again");
                 RestartGame();
             }
+
+            if (pbPlayer.Bounds.IntersectsWith(pbDoorOpen.Bounds))
+            {
+                timer.Stop();
+                MessageBox.Show("Well done, your journey here is complete! " + Environment.NewLine + "Click Ok to play the next level");
+
+                SecondLevel secondLevel = new SecondLevel();
+                secondLevel.Show();
+                this.Hide();
+            }
         }
+
 
         private void Down(object sender, KeyEventArgs e)
         {
@@ -117,6 +111,22 @@ namespace ThePlatformPlatformerGame
             else if (e.KeyCode == Keys.Space && jumping == false)
             {
                 jumping = true;
+            }
+        }
+
+        private void UP(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Left)
+            {
+                goLeft = false;
+            }
+            else if (e.KeyCode == Keys.Right)
+            {
+                goRight = false;
+            }
+            else if (e.KeyCode == Keys.Space && jumping == false)
+            {
+                jumping = false;
             }
         }
 
@@ -135,7 +145,8 @@ namespace ThePlatformPlatformerGame
         {
             foreach (Control x in this.Controls)
             {
-                if (x is PictureBox && (string)x.Tag == "platform" || x is PictureBox && (string)x.Tag == "door") 
+                if (x is PictureBox && (string)x.Tag == "platform" || x is PictureBox && (string)x.Tag == "key" ||
+                    x is PictureBox && (string)x.Tag == "door")
                 {
                     if (direction == "back")
                     {
