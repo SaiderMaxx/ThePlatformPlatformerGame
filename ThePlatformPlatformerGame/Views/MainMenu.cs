@@ -17,9 +17,16 @@ namespace ThePlatformPlatformerGame
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnPlay_Click(object sender, EventArgs e)
         {
+            LevelSelect levelSelect = new LevelSelect();
+            levelSelect.Show();
+            this.Hide();
+        }
 
+        private void Close(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
