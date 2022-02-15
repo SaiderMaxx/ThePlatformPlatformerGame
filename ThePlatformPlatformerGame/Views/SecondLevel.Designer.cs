@@ -195,7 +195,7 @@
             // pbKey
             // 
             this.pbKey.Image = global::ThePlatformPlatformerGame.Properties.Resources.key;
-            this.pbKey.Location = new System.Drawing.Point(1090, 156);
+            this.pbKey.Location = new System.Drawing.Point(1089, 147);
             this.pbKey.Name = "pbKey";
             this.pbKey.Size = new System.Drawing.Size(89, 45);
             this.pbKey.TabIndex = 13;

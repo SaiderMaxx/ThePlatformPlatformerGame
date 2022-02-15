@@ -51,12 +51,13 @@
             // pbDoorOpen
             // 
             this.pbDoorOpen.Image = global::ThePlatformPlatformerGame.Properties.Resources.door_open;
-            this.pbDoorOpen.Location = new System.Drawing.Point(12, 33);
+            this.pbDoorOpen.Location = new System.Drawing.Point(62, 32);
             this.pbDoorOpen.Name = "pbDoorOpen";
-            this.pbDoorOpen.Size = new System.Drawing.Size(56, 87);
+            this.pbDoorOpen.Size = new System.Drawing.Size(60, 90);
+            this.pbDoorOpen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbDoorOpen.TabIndex = 2;
             this.pbDoorOpen.TabStop = false;
-            this.pbDoorOpen.Tag = "door_open";
+            this.pbDoorOpen.Tag = "door";
             // 
             // pictureBox2
             // 
@@ -152,6 +153,7 @@
             this.Text = "FirstLevel";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CloseGame);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Down);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.UP);
             ((System.ComponentModel.ISupportInitialize)(this.pbDoorOpen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlatform3)).EndInit();
