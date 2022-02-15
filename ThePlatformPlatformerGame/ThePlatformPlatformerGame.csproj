@@ -118,6 +118,9 @@
     <EmbeddedResource Include="Views\SecondLevel.resx">
       <DependentUpon>SecondLevel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\ThirdLevel.resx">
+      <DependentUpon>ThirdLevel.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -163,6 +166,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Ice_23_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
