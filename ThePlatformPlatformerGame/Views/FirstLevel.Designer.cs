@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.pbPlayer = new System.Windows.Forms.PictureBox();
             this.pbDoorOpen = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pbPlatform3 = new System.Windows.Forms.PictureBox();
@@ -36,8 +38,7 @@
             this.pbPlatform5 = new System.Windows.Forms.PictureBox();
             this.pbPlatform1 = new System.Windows.Forms.PictureBox();
             this.pbBackground = new System.Windows.Forms.PictureBox();
-            this.timer = new System.Windows.Forms.Timer(this.components);
-            this.pbPlayer = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDoorOpen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlatform3)).BeginInit();
@@ -45,8 +46,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbPlatform5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlatform1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).BeginInit();
             this.SuspendLayout();
+            // 
+            // timer
+            // 
+            this.timer.Enabled = true;
+            this.timer.Interval = 20;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // pbPlayer
+            // 
+            this.pbPlayer.Image = global::ThePlatformPlatformerGame.Properties.Resources.player;
+            this.pbPlayer.Location = new System.Drawing.Point(187, 291);
+            this.pbPlayer.Name = "pbPlayer";
+            this.pbPlayer.Size = new System.Drawing.Size(63, 75);
+            this.pbPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPlayer.TabIndex = 15;
+            this.pbPlayer.TabStop = false;
+            this.pbPlayer.Tag = "player";
             // 
             // pbDoorOpen
             // 
@@ -111,6 +128,7 @@
             // 
             // pbBackground
             // 
+            this.pbBackground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbBackground.Image = global::ThePlatformPlatformerGame.Properties.Resources.background;
             this.pbBackground.Location = new System.Drawing.Point(0, 0);
             this.pbBackground.Name = "pbBackground";
@@ -118,23 +136,6 @@
             this.pbBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbBackground.TabIndex = 0;
             this.pbBackground.TabStop = false;
-            // 
-            // timer
-            // 
-            this.timer.Enabled = true;
-            this.timer.Interval = 20;
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
-            // 
-            // pbPlayer
-            // 
-            this.pbPlayer.Image = global::ThePlatformPlatformerGame.Properties.Resources.player;
-            this.pbPlayer.Location = new System.Drawing.Point(187, 291);
-            this.pbPlayer.Name = "pbPlayer";
-            this.pbPlayer.Size = new System.Drawing.Size(63, 75);
-            this.pbPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbPlayer.TabIndex = 15;
-            this.pbPlayer.TabStop = false;
-            this.pbPlayer.Tag = "player";
             // 
             // FirstLevel
             // 
@@ -154,6 +155,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CloseGame);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Down);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.UP);
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDoorOpen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlatform3)).EndInit();
@@ -161,7 +163,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbPlatform5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlatform1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
