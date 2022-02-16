@@ -96,8 +96,14 @@
     <Compile Include="Views\ThirdLevel.Designer.cs">
       <DependentUpon>ThirdLevel.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\FifthLevel.resx">
+      <DependentUpon>FifthLevel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FirstLevel.resx">
       <DependentUpon>FirstLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FourthLevel.resx">
+      <DependentUpon>FourthLevel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LevelSelect.resx">
       <DependentUpon>LevelSelect.cs</DependentUpon>
@@ -169,6 +175,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\coin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01e01abcc34237525dc4b5510cef4b35.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThisIsForSecondBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ice_1_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ice_3_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThisIsForThirdBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ice_12_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ice_13_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ice_15_16x16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

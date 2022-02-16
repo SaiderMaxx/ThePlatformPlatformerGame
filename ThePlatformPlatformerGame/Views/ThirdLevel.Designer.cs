@@ -63,7 +63,7 @@
             this.pbBackground.Image = global::ThePlatformPlatformerGame.Properties.Resources.background;
             this.pbBackground.Location = new System.Drawing.Point(0, 0);
             this.pbBackground.Name = "pbBackground";
-            this.pbBackground.Size = new System.Drawing.Size(2000, 497);
+            this.pbBackground.Size = new System.Drawing.Size(2000, 480);
             this.pbBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbBackground.TabIndex = 1;
             this.pbBackground.TabStop = false;
