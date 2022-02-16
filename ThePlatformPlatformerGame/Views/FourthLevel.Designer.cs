@@ -43,10 +43,10 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pbPlayer = new System.Windows.Forms.PictureBox();
             this.pbKey = new System.Windows.Forms.PictureBox();
             this.pbCoin = new System.Windows.Forms.PictureBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.pbPlayer = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlatform)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBackground)).BeginInit();
@@ -61,9 +61,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbKey)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCoin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).BeginInit();
             this.SuspendLayout();
             // 
             // pbPlatform
@@ -78,7 +78,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::ThePlatformPlatformerGame.Properties.Resources.ThisIsForSecondBackground;
             this.pictureBox1.Image = global::ThePlatformPlatformerGame.Properties.Resources.ThisIsForSecondBackground;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -112,7 +111,7 @@
             this.pictureBox3.BackgroundImage = global::ThePlatformPlatformerGame.Properties.Resources.Ice_1_16x16;
             this.pictureBox3.Location = new System.Drawing.Point(0, 130);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(112, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(121, 50);
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Tag = "platform";
@@ -132,7 +131,7 @@
             this.pictureBox5.BackgroundImage = global::ThePlatformPlatformerGame.Properties.Resources.Ice_1_16x16;
             this.pictureBox5.Location = new System.Drawing.Point(459, 329);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(61, 111);
+            this.pictureBox5.Size = new System.Drawing.Size(61, 87);
             this.pictureBox5.TabIndex = 14;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Tag = "platform";
@@ -208,17 +207,6 @@
             this.pictureBox11.TabStop = false;
             this.pictureBox11.Tag = "justBackground";
             // 
-            // pbPlayer
-            // 
-            this.pbPlayer.Image = global::ThePlatformPlatformerGame.Properties.Resources.player;
-            this.pbPlayer.Location = new System.Drawing.Point(40, 49);
-            this.pbPlayer.Name = "pbPlayer";
-            this.pbPlayer.Size = new System.Drawing.Size(63, 75);
-            this.pbPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbPlayer.TabIndex = 17;
-            this.pbPlayer.TabStop = false;
-            this.pbPlayer.Tag = "player";
-            // 
             // pbKey
             // 
             this.pbKey.Image = global::ThePlatformPlatformerGame.Properties.Resources.key;
@@ -245,16 +233,28 @@
             // 
             this.timer.Enabled = true;
             this.timer.Interval = 20;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // pbPlayer
+            // 
+            this.pbPlayer.Image = global::ThePlatformPlatformerGame.Properties.Resources.player;
+            this.pbPlayer.Location = new System.Drawing.Point(58, 49);
+            this.pbPlayer.Name = "pbPlayer";
+            this.pbPlayer.Size = new System.Drawing.Size(63, 75);
+            this.pbPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPlayer.TabIndex = 21;
+            this.pbPlayer.TabStop = false;
+            this.pbPlayer.Tag = "player";
             // 
             // FourthLevel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1785, 452);
-            this.Controls.Add(this.pbCoin);
-            this.Controls.Add(this.pbPlayer);
-            this.Controls.Add(this.pbDoorClosed);
+            this.ClientSize = new System.Drawing.Size(1240, 449);
             this.Controls.Add(this.pbPlatform);
+            this.Controls.Add(this.pbPlayer);
+            this.Controls.Add(this.pbCoin);
+            this.Controls.Add(this.pbDoorClosed);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox4);
@@ -287,9 +287,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbKey)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCoin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,9 +311,9 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pbPlayer;
         private System.Windows.Forms.PictureBox pbKey;
         private System.Windows.Forms.PictureBox pbCoin;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.PictureBox pbPlayer;
     }
 }

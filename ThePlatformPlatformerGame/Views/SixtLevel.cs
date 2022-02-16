@@ -16,5 +16,10 @@ namespace ThePlatformPlatformerGame
         {
             InitializeComponent();
         }
+
+        private void CloseGame(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

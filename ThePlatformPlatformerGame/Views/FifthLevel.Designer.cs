@@ -184,7 +184,7 @@
             this.pictureBox11.Size = new System.Drawing.Size(67, 50);
             this.pictureBox11.TabIndex = 3;
             this.pictureBox11.TabStop = false;
-            this.pictureBox11.Tag = "";
+            this.pictureBox11.Tag = "justBackground";
             // 
             // pbPlayer
             // 
@@ -228,7 +228,7 @@
             this.pbCoin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbCoin.TabIndex = 21;
             this.pbCoin.TabStop = false;
-            this.pbCoin.Tag = "";
+            this.pbCoin.Tag = "justBackground";
             // 
             // timer
             // 
@@ -240,7 +240,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1785, 452);
+            this.ClientSize = new System.Drawing.Size(1240, 449);
             this.Controls.Add(this.pbCoin);
             this.Controls.Add(this.pbDoorClosed);
             this.Controls.Add(this.pbKey);

@@ -12,18 +12,19 @@ namespace ThePlatformPlatformerGame
 {
     public partial class FifthLevel : Form
     {
-        bool goLeft, goRight, jumping, hasKey, hasCoin;
+        bool goLeft, goRight, jumping, hasKey;
 
-        int jumpSpeed = 10;
-        int force = 8;
+        int jumpSpeed = 5;
+        int force = 4;
 
-        int playerSpeed = 8;
-        int backgroundSpeed = 8;
+        int playerSpeed = 4;
+        int backgroundSpeed = 4;
 
         public FifthLevel()
         {
             InitializeComponent();
         }
+
         private void timer_Tick(object sender, EventArgs e)
         {
             pbPlayer.Top += jumpSpeed;
@@ -39,12 +40,14 @@ namespace ThePlatformPlatformerGame
 
             if (goLeft == true && pbBackground.Left < 0)
             {
+                pbPlayer.Image = Properties.Resources.playerLeft;
                 pbBackground.Left += backgroundSpeed;
                 MoveGameElements("forward");
             }
 
-            if (goRight == true && pbBackground.Left > -970)
+            if (goRight == true && pbBackground.Left > -420)
             {
+                pbPlayer.Image = Properties.Resources.player;
                 pbBackground.Left -= backgroundSpeed;
                 MoveGameElements("back");
             }
@@ -85,7 +88,7 @@ namespace ThePlatformPlatformerGame
             }
 
 
-            if (pbPlayer.Bounds.IntersectsWith(pbDoorClosed.Bounds) && hasKey == true && hasCoin == true)
+            if (pbPlayer.Bounds.IntersectsWith(pbDoorClosed.Bounds) && hasKey == true )
             {
                 pbDoorClosed.Image = Properties.Resources.door_open;
                 timer.Stop();
@@ -138,24 +141,28 @@ namespace ThePlatformPlatformerGame
         {
             Application.Exit();
         }
+
         private void NextLevel()
         {
             SixtLevel newWindow = new SixtLevel();
             newWindow.Show();
             this.Hide();
         }
+
         private void RestartGame()
         {
             FifthLevel sameWindow = new FifthLevel();
             sameWindow.Show();
             this.Hide();
         }
+
         private void MoveGameElements(string direction)
         {
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox && (string)x.Tag == "platform" || x is PictureBox && (string)x.Tag == "key" ||
-                    x is PictureBox && (string)x.Tag == "door")
+                    x is PictureBox && (string)x.Tag == "door" || x is PictureBox && (string)x.Tag == "coin" ||
+                     x is PictureBox && (string)x.Tag == "justBackground")
                 {
                     if (direction == "back")
                     {
