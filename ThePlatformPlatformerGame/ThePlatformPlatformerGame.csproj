@@ -124,6 +124,9 @@
     <EmbeddedResource Include="Views\SecondLevel.resx">
       <DependentUpon>SecondLevel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\SixtLevel.resx">
+      <DependentUpon>SixtLevel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\ThirdLevel.resx">
       <DependentUpon>ThirdLevel.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +202,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Ice_15_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerLeft.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

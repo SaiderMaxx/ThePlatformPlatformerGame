@@ -243,6 +243,16 @@ namespace ThePlatformPlatformerGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap playerLeft {
+            get {
+                object obj = ResourceManager.GetObject("playerLeft", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ThisIsForSecondBackground {
             get {
                 object obj = ResourceManager.GetObject("ThisIsForSecondBackground", resourceCulture);

@@ -14,11 +14,11 @@ namespace ThePlatformPlatformerGame
     {
         bool goLeft, goRight, jumping, hasKey,hasCoin;
 
-        int jumpSpeed = 10;
-        int force = 8;
+        int jumpSpeed = 5;
+        int force = 4;
 
-        int playerSpeed = 8;
-        int backgroundSpeed = 8;
+        int playerSpeed = 4;
+        int backgroundSpeed = 4;
 
         public ThirdLevel()
         {
@@ -39,12 +39,14 @@ namespace ThePlatformPlatformerGame
 
             if (goLeft == true && pbBackground.Left < 0)
             {
+                pbPlayer.Image = Properties.Resources.playerLeft;
                 pbBackground.Left += backgroundSpeed;
                 MoveGameElements("forward");
             }
 
             if (goRight == true && pbBackground.Left > -970)
             {
+                pbPlayer.Image = Properties.Resources.player;
                 pbBackground.Left -= backgroundSpeed;
                 MoveGameElements("back");
             }
