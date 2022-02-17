@@ -92,7 +92,7 @@ namespace ThePlatformPlatformerGame
             {
                 pbDoorClosed.Image = Properties.Resources.door_open;
                 timer.Stop();
-                MessageBox.Show("Well done, your journey is complete! " + Environment.NewLine + "Click Ok to play again");
+                MessageBox.Show("Well done ! " + Environment.NewLine + "Click Ok to play the next level");
                 NextLevel();
             }
 
