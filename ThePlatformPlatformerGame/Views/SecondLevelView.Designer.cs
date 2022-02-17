@@ -198,6 +198,7 @@
             this.pbKey.Location = new System.Drawing.Point(1089, 147);
             this.pbKey.Name = "pbKey";
             this.pbKey.Size = new System.Drawing.Size(89, 45);
+            this.pbKey.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbKey.TabIndex = 13;
             this.pbKey.TabStop = false;
             this.pbKey.Tag = "key";
