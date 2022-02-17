@@ -46,70 +46,70 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Views\FifthLevel.cs">
+    <Compile Include="Views\FifthLevelView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FifthLevel.Designer.cs">
-      <DependentUpon>FifthLevel.cs</DependentUpon>
+    <Compile Include="Views\FifthLevelView.Designer.cs">
+      <DependentUpon>FifthLevelView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FirstLevel.cs">
+    <Compile Include="Views\FirstLevelView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FirstLevel.Designer.cs">
-      <DependentUpon>FirstLevel.cs</DependentUpon>
+    <Compile Include="Views\FirstLevelView.Designer.cs">
+      <DependentUpon>FirstLevelView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FourthLevel.cs">
+    <Compile Include="Views\FourthLevelView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FourthLevel.Designer.cs">
-      <DependentUpon>FourthLevel.cs</DependentUpon>
+    <Compile Include="Views\FourthLevelView.Designer.cs">
+      <DependentUpon>FourthLevelView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\LevelSelect.cs">
+    <Compile Include="Views\LevelSelectView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\LevelSelect.Designer.cs">
-      <DependentUpon>LevelSelect.cs</DependentUpon>
+    <Compile Include="Views\LevelSelectView.Designer.cs">
+      <DependentUpon>LevelSelectView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainMenu.cs">
+    <Compile Include="Views\MainMenuView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MainMenu.Designer.cs">
-      <DependentUpon>MainMenu.cs</DependentUpon>
+    <Compile Include="Views\MainMenuView.Designer.cs">
+      <DependentUpon>MainMenuView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\SecondLevel.cs">
+    <Compile Include="Views\SecondLevelView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\SecondLevel.Designer.cs">
-      <DependentUpon>SecondLevel.cs</DependentUpon>
+    <Compile Include="Views\SecondLevelView.Designer.cs">
+      <DependentUpon>SecondLevelView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\SixtLevel.cs">
+    <Compile Include="Views\SixtLevelView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\SixtLevel.Designer.cs">
-      <DependentUpon>SixtLevel.cs</DependentUpon>
+    <Compile Include="Views\SixtLevelView.Designer.cs">
+      <DependentUpon>SixtLevelView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\ThirdLevel.cs">
+    <Compile Include="Views\ThirdLevelView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\ThirdLevel.Designer.cs">
-      <DependentUpon>ThirdLevel.cs</DependentUpon>
+    <Compile Include="Views\ThirdLevelView.Designer.cs">
+      <DependentUpon>ThirdLevelView.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\FifthLevel.resx">
-      <DependentUpon>FifthLevel.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FifthLevelView.resx">
+      <DependentUpon>FifthLevelView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FirstLevel.resx">
-      <DependentUpon>FirstLevel.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FirstLevelView.resx">
+      <DependentUpon>FirstLevelView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FourthLevel.resx">
-      <DependentUpon>FourthLevel.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FourthLevelView.resx">
+      <DependentUpon>FourthLevelView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\LevelSelect.resx">
-      <DependentUpon>LevelSelect.cs</DependentUpon>
+    <EmbeddedResource Include="Views\LevelSelectView.resx">
+      <DependentUpon>LevelSelectView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MainMenu.resx">
-      <DependentUpon>MainMenu.cs</DependentUpon>
+    <EmbeddedResource Include="Views\MainMenuView.resx">
+      <DependentUpon>MainMenuView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -121,14 +121,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Views\SecondLevel.resx">
-      <DependentUpon>SecondLevel.cs</DependentUpon>
+    <EmbeddedResource Include="Views\SecondLevelView.resx">
+      <DependentUpon>SecondLevelView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\SixtLevel.resx">
-      <DependentUpon>SixtLevel.cs</DependentUpon>
+    <EmbeddedResource Include="Views\SixtLevelView.resx">
+      <DependentUpon>SixtLevelView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\ThirdLevel.resx">
-      <DependentUpon>ThirdLevel.cs</DependentUpon>
+    <EmbeddedResource Include="Views\ThirdLevelView.resx">
+      <DependentUpon>ThirdLevelView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

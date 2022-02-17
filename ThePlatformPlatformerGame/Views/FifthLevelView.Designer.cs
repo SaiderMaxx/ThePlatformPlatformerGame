@@ -85,7 +85,7 @@
             // pbDoorClosed
             // 
             this.pbDoorClosed.Image = global::ThePlatformPlatformerGame.Properties.Resources.door_closed;
-            this.pbDoorClosed.Location = new System.Drawing.Point(1706, 56);
+            this.pbDoorClosed.Location = new System.Drawing.Point(1655, 57);
             this.pbDoorClosed.Name = "pbDoorClosed";
             this.pbDoorClosed.Size = new System.Drawing.Size(60, 87);
             this.pbDoorClosed.TabIndex = 20;
@@ -117,7 +117,7 @@
             // pictureBox9
             // 
             this.pictureBox9.BackgroundImage = global::ThePlatformPlatformerGame.Properties.Resources.Ice_15_16x16;
-            this.pictureBox9.Location = new System.Drawing.Point(1505, 258);
+            this.pictureBox9.Location = new System.Drawing.Point(1444, 258);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(67, 50);
             this.pictureBox9.TabIndex = 3;
@@ -127,7 +127,7 @@
             // pictureBox6
             // 
             this.pictureBox6.BackgroundImage = global::ThePlatformPlatformerGame.Properties.Resources.Ice_15_16x16;
-            this.pictureBox6.Location = new System.Drawing.Point(1706, 149);
+            this.pictureBox6.Location = new System.Drawing.Point(1655, 150);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(67, 50);
             this.pictureBox6.TabIndex = 3;
@@ -239,7 +239,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1240, 449);
+            this.ClientSize = new System.Drawing.Size(1782, 449);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pbCoin);
             this.Controls.Add(this.pbDoorClosed);
